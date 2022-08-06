@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color:rgb(207, 58, 132);
+    font-family: "Lato", sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.squareButton {
+ text-decoration: none;
+ background-color:rgb(40, 40, 40);
+ color: white;
+ text-align: center;
+ padding: 15px 25px;
+ display: inline-block; 
+ width: 255px;
+}
+
+.navigation {
+ text-decoration: none;
+ background-color:rgb(80, 80, 80);
+ color: white;
+ text-align: center;
+ padding: 15px 25px;
+ display: inline-block;   
+ width: 100px;  
+
+}
+
+.box2 > .cover {
+    position: absolute;
+    opacity:0;
+    transition:opacity 0.1s;
+    margin: 0; auto;
+}
+
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.box2:hover > .cover {
+    opacity:1;
+}
+
+.box2:hover > .top {
+    opacity:0;
+}
+
+
+h1 {
+    font-size: 1.rem;
+    color:rgb(55, 55, 55)
+}
+
+h2 {
+    font-size: 1.rem;
+    color:rgb(80, 80, 80)
+}
+
+p{
+    text-align: center;
+}
+
+.marquee {
+    width: 100%;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-color:rgb(80, 80, 80)
+}
+
+.marquee-content {
+    height: 100%;
+    display: flex;
+    animation: scrolling 15s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {transform: translatex(100vw);}
+    100% {transform: translateX(1vw); }
+
+}
+
+.box {
+    align-items: flex;
+    justify-content: center;
+    margin-top:  30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 30px;
+    border: 2px solid rgb(81, 81, 81);
+    background: rgb(225, 225, 104);
+    color:rgb(80, 80, 80);
+    
+  }
+
+  .one {
+    flex: ;
+    border: 2px solid rgb(97, 96, 96);
+    padding: 10px;
+  }
+
+  .two {
+    flex: 1;
+    border: 2px solid rgb(97, 96, 96);
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .three {
+    flex: 1;
+    border: 2px solid rgb(97, 96, 96);
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .four {
+    flex: 1;
+    border: 2px solid rgb(97, 96, 96);
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .five {
+    flex: 1;
+    border: 2px solid rgb(97, 96, 96);
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .six {
+    flex: 1;
+    border: 2px solid rgb(97, 96, 96);
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .seven {
+    flex: 1;
+    border: 2px solid rgb(97, 96, 96);
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+ 
+
