@@ -5,18 +5,46 @@
 
 :root{
     --col-01: #272727;
-    --col-02: #dc38a3;
-    --col-03: #32c485;
-    --col-04: #7b7b7b;
-    --border-01: solid 2px rgb(36, 36, 36);
+    --col-02: #eaa9bb;
+    --col-03: #48bc8a;
+    --col-04: #c3c3c3;
+    --border-01: solid 1px rgb(36, 36, 36);
+
 }
 
 body {
-    background-color: var(--col-03);
+    background-color: white;
+    margin:3%;
+    font-family: 'Poppins', sans-serif;
+    color: var(--col-01);
+    text-align: center;
 }
+
+/* .grid-item-two{
+     background-color: #dc38a3;
+    width: 71vw;
+    height: 100vh;
+    position: fixed;
+    align-items: center;
+    justify-content: center; 
+} */
+
+#colourbox{
+  /*   background-color: var(--col-02); */
+  /*   width: 71vw;
+    height: 100vh;
+
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0.1rem;
+    border: var(--border-01); */
+    border: var(--border-01);
+   
+}
+
 /* This is the main page grid, i broke it into 4 x4 and then had several subfrids */
 #grid-container-bg{
-    /* background-color: var(--col-01); */
+    background-color: var(--col-04);
     width: 71vw;
     height: 100vh;
     /* width: 100vw;
@@ -24,25 +52,28 @@ body {
 
     margin: 0 auto;
     display: grid;
+    grid-gap: 0.1rem;
 
-    /* fr stands for fraction */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+   
 }
 
 .grid-item-one{
-    border: var(--border-01)
+    border: var(--border-01);
+    justify-content: center;
 }
 
 #box-1 {
     grid-row: 1/2;
     grid-column: 1/5;
+  
 }
 
 #box-2 {
     grid-row: 2/3;
     grid-column: 1/5;
-    background-color: var(--col-03);
 }
 
 #box-3 {
@@ -93,6 +124,7 @@ body {
 #box-7 {
     grid-row: 3/4;
     grid-column: 7/9;
+    
 }
 
 #box-7-1 {
@@ -103,41 +135,57 @@ body {
 #box-8 {
     grid-row: 5/6;
     grid-column: 1/6;
+    background-color: var(--col-03);
 }
 
 #box-8-1 {
     grid-row: 5/6;
     grid-column: 6/9;
+    background-color: var(--col-02);
 }
 
 #box-9 {
     grid-row: 6/7;
     grid-column: 1/4;
+    background-color: var(--col-03);
+    
 }
 
 #box-9-1 {
     grid-row: 6/7;
     grid-column: 4/9;
+    background-color: var(--col-02);
+}
+
+#box-9-2 {
+    grid-row: 6/7;
+    grid-column: 4/5;
+    background-color: var(--col-03);
 }
 
 #box-10 {
     grid-row: 7/9;
     grid-column: 1/5;
+    background-color: var(--col-03);
 }
 
 #box-10-1 {
     grid-row: 7/9;
     grid-column: 5/9;
+    background-color: var(--col-02);
+  
 }
 
 #box-11 {
     grid-row: 9/11;
     grid-column: 1/5;
+    background-color: var(--col-03);
 }
 
 #box-11-1 {
     grid-row: 9/11;
     grid-column: 5/9;
+    background-color: var(--col-02);
 }
 
 #box-12 {
