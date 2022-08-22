@@ -4,6 +4,7 @@
 }
 
 :root{
+    /* Main colours were chosen based on the reference, "Strelka Institute - Anna Kulachek.jpg" */
     --col-01: #272727;
     --col-02: #eaa9bb;
     --col-03: #48bc8a;
@@ -15,12 +16,12 @@
 
 body {
     background-color: white;
-    /* margin:3%; */
     font-family: 'Poppins', sans-serif;
     color: var(--col-01);
     text-align: center;
+    
 }
-
+/*I wanted to put colour blocks under main grid container, but I just added another grid item to add colours */ 
 /* .grid-item-two{
      background-color: #dc38a3;
     width: 71vw;
@@ -31,20 +32,10 @@ body {
 } */
 
 #colourbox{
-  /*   background-color: var(--col-02); */
-  /*   width: 71vw;
-    height: 100vh;
-
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 0.1rem;
-    border: var(--border-01); */
     border: var(--border-01);
-
-   
 }
 
-/* This is the main page grid, i broke it into 4 x4 and then had several subfrids */
+/* This is the main page grid, i broke it into 8 x 12  */
 #grid-container-bg{
     background-color: var(--col-04);
     width: 71vw;
@@ -55,16 +46,13 @@ body {
     margin: 0 auto;
     display: grid;
     grid-gap: 0.1rem;
-
+    /* fr stands for fractions */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-   
 }
 
 .grid-item-one{
     border: var(--border-01);
-    /* justify-content: center; */
 }
 
 #box-1 {
@@ -155,6 +143,16 @@ body {
     background-color: var(--col-02);
 }
 
+/* I had to add these borders separately to make it look like it's just one box(box8) */
+#box-8-2 {
+    grid-row: 5/6;
+    grid-column: 5/6;
+    background-color: var(--col-02);
+    border-top: var(--border-02); 
+    border-right: var(--border-02);
+    border-bottom: var(--border-02);
+}
+
 #box-9 {
     grid-row: 6/7;
     grid-column: 1/4;
@@ -168,7 +166,7 @@ body {
     background-color: var(--col-02);
    
 }
-
+/* I had to add these borders separately to make it look like it's just one box(box9-1) */
 #box-9-2 {
     grid-row: 6/7;
     grid-column: 4/5;
