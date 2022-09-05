@@ -1,0 +1,252 @@
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+:root{
+  /* Main colours are pale pink and green which are my favourite combination
+  as well as dark grey and light grey as basic black and white */
+  --col-01:#1d1d1d;
+  --col-02:#e7c7d2;
+  --col-03:#1b8648;
+  --col-04:#d25883;
+  --col-05:rgb(231, 220, 220);
+  font-size: 16px;
+  /* Font is applied */
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+  padding: 1rem;
+  background-color: var(--col-02);
+  color: var(--col-01);
+ /*  transition: color ease-in 0.5s; */
+}
+
+button {
+  /* Adjusted the button's padding, border style and colour */
+  color: var(--col-03);
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+  border-color: var(--col-03);
+  border-style: double;
+}
+
+a:hover {
+  animation: colourCycle 1s 1;
+}
+
+a {
+  color:var(--col-03);
+}
+
+/* Animation is applied in colour and font-size changes on mouse over*/
+@keyframes colourCycle {
+  0% {
+    color: var(--col-01);
+   /*  font-size: 0.95rem; */
+  }
+
+  100% {
+    color: var(--col-04);
+    /* font-size: 1rem; */
+  }
+}
+
+section{
+  margin-bottom: 2rem;
+}
+
+/* Designed with the visual hierarchy in texts */
+h1{
+  font-size: 3rem;
+  color: var(--col-03);
+}
+
+h2{
+  font-size: 2rem;
+  color:var(--col-01);
+}
+
+h3{
+  font-size: 1rem;
+  color:var(--col-01);
+}
+
+p{
+  font-size: 1rem;
+  margin-top: 1rem;
+  color:var(--col-01);
+}
+
+figcaption{
+  width: fit-content;
+}
+
+dl ul{
+  margin-bottom: 0;
+} 
+
+li{
+  font-size: 1rem;
+  margin: 0.4rem;
+  color: var(--col-01)
+}
+
+dd{
+  padding-left: 60px;
+}
+
+li ul{
+  padding-left: 40px;
+}
+
+.img-wrapper{
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.img-figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-img{
+  width: 80%;
+}
+
+.res-columns{
+  column-width: 25rem;
+}
+
+
+
+/* medium devices 600 - 992 */
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 20px;
+  }
+  
+  .img-wrapper{
+    width: 75%;
+    margin: 1.5rem auto;
+  }
+}
+
+/* medium devices 992 + */
+@media only screen and (min-width: 992px) {
+  :root{
+    font-size: 24px;
+  }
+
+  .img-wrapper{
+    max-width: fit-content;
+    float: right;
+    margin: 1.5rem;
+  }
+}
+
+/*Added in class*/
+@media (prefers-reduced-motion) {
+  body {
+    background-color: var(--col-04);
+  }
+}
+
+/* Originally, I wanted to put navigation as buttons but I decided to proceed with what I have now */
+/* .navigation {
+  
+  text-decoration: none;
+  background-color:rgb(80, 80, 80);
+  color: white;
+  text-align: center;
+  padding: 15px 25px;
+  display: inline-block;   
+  width: 100px; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ 
+ } */
+
+
+ /* This is for the navigation box menu */
+ nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  background-color: var(--col-05);
+  border: 2px solid var(--col-01);
+  border-style: double;
+}
+
+/* I had to use div class to specifically design the links for the navigation menu */
+.navigationBar li a {
+/* I've designed the navigation as a box which is also similar to dark mode button design */
+  display: block;
+  color: var(--col-01);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navigationBar li {
+  text-align: center;
+  border-bottom: 1px solid var(--col-01);
+}
+
+.navigationBar li:last-child {
+  border-bottom: none;
+}
+
+/* I've added "Introduction" and made it active */
+.navigationBar li a.active {
+  background-color: var(--col-03);
+  color: var(--col-02);
+}
+
+.navigationBar li a:hover:not(.active) {
+  background-color: var(--col-03);
+  color: var(--col-02);
+}
+
+.navigationBar a:hover {
+  animation: colourChange1 1 0.2s;
+}
+
+/* This is the animation only applied to the navigation menu */
+@keyframes colourChange1 {
+  0% {
+    color: var(--col-01);
+  
+  }
+  100% {
+    color: var(--col-03);
+  }
+}
+
+/* This is a seperate div class for section titles to go back to the top or navigation menu.
+When I was scrolling down using navigation bar, I thought I also needed a navigational element to go back to top. */
+.titleLink a {
+  color: var(--col-01);
+  text-decoration: none;
+}
+
+.titleLink a:hover {
+  animation: colourChange2 1 1s;
+}
+
+/* This is the animation only applied to the section titles */
+@keyframes colourChange2 {
+  0% {
+    color: var(--col-01);
+  
+  }
+
+  100% {
+    color: var(--col-03);
+  }
+}
