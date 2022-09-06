@@ -33,8 +33,10 @@
         <button class="FilterSelector" id="clm-author" onclick='filterCategory("CLM", "author")'>Carla Lalli Music</button>
         <button class="FilterSelector" id="clm-author" onclick='allCategories()'>All</button>
       </details>
-<br>
-      <details class="FilterCategoryWrapper">
+    </div>
+
+    <div id="list-filter-wrapper"> 
+    <details class="FilterCategoryWrapper">
       <summary>Categories</summary>
       <button class="FilterSelector" id="pasta-categories" onclick='filterCategory("pasta", "categories")'>Pasta</button>
       <button class="FilterSelector" id="veggies-categories" onclick='filterCategory("veggies", "categories")'>Veggies</button>
@@ -42,10 +44,20 @@
       <button class="FilterSelector" id="desserts-categories" onclick='filterCategory("desserts", "categories")'>Desserts</button>
       <button class="FilterSelector" id="categories" onclick='allCategories()'>All</button>
       </details>
-
-
     </div>
 
+    <div id="list-filter-wrapper"> 
+      <details class="FilterCategoryWrapper">
+        <summary>Cusine</summary>
+        <button class="FilterSelector" id="italian-categories" onclick='filterCategory("italian", "categories")'>Italian</button>
+        <button class="FilterSelector" id="japanese-categories" onclick='filterCategory("japanese", "categories")'>Japanese</button>
+        <button class="FilterSelector" id="korean-categories" onclick='filterCategory("korean", "categories")'>Korean</button>
+        <button class="FilterSelector" id="african-categories" onclick='filterCategory("african", "categories")'>African</button>
+        <button class="FilterSelector" id="american-categories" onclick='filterCategory("american", "categories")'>American</button>
+        <button class="FilterSelector" id="categories" onclick='allCategories()'>All</button>
+        </details>
+      </div>
+    
     <hr />
 
     <section id="recipe-list-wrapper">
@@ -81,6 +93,7 @@
            onclick="window.open(`https://www.abc.net.au/everyday/caprese-salad-slow-roasted-tomato-rocket-basil-gremolata-recipe/10776846`);"
            data-author="HM"
            data-categories="veggies"
+           data-cuisine="italian"
       >
 
         <img class="RecipeImg" src="./images/Caprese.jpg" alt="plate of caprese salad" />
@@ -108,6 +121,7 @@
            onclick="window.open(`https://www.seriouseats.com/crispy-enoki-and-onion-fritter-with-thai-curry-mayo-recipe`);"
            data-author="KLA"
            data-categories="veggies"
+           data-cuisine="italian"
       >
 
         <img class="RecipeImg" src="./images/Enoki.jpg" alt="enoki mushrooms" />
@@ -135,6 +149,7 @@
            onclick="window.open(`https://www.maangchi.com/recipe/jjinppang`);"
            data-author="M"
            data-categories="desserts"
+           data-cuisine="korean"
       >
 
         <img class="RecipeImg" src="./images/Red_Bean_Bun.jpg" alt="ripped open steamed bun with red bean paste" />
@@ -161,6 +176,7 @@
            onclick="window.open(`https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe`);"
            data-author="KLA"
            data-categories="desserts"
+           data-cuisine="american"
       >
 
         <img class="RecipeImg" src="./images/Cookies.jpg" alt="plate of chocolate chip cookies" />
@@ -186,6 +202,7 @@
            onclick="window.open(`https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe`);"
            data-author="KLA"
            data-categories="veggies"
+           data-cuisine="korean"
       >
 
         <img class="RecipeImg" src="./images/Grilled_Cheese.jpg" alt="grilled cheese sandwich with pickles" />
@@ -213,6 +230,9 @@
            onclick="window.open(`https://www.patreon.com/posts/recipe-hands-off-60369279`);"
            data-author="CLM"
            data-categories="meat"
+           data-cuisine="american"
+
+           
       >
 
         <img class="RecipeImg" src="./images/Pork_Beans.jpg" alt="pot of pork and beans" />
@@ -239,6 +259,8 @@
            onclick="window.open(`https://www.maangchi.com/recipe/kimchijeon`);"
            data-author="M"
            data-categories="veggies"
+           data-cuisine="korean"
+
       >
 
         <img class="RecipeImg" src="./images/Kimchi_Pancake.jpg" alt="kimchi pancake with bowl of dipping sauce" />
@@ -264,6 +286,8 @@
            onclick="window.open(`https://www.seriouseats.com/shakshuka-north-african-shirred-eggs-tomato-pepper-recipe`);"
            data-author="KLA"
            data-categories="meat"
+           data-cuisine="african"
+
       >
 
         <img class="RecipeImg" src="./images/Shakshuka.jpg" alt="pan filled with shakshuka" />
@@ -289,6 +313,8 @@
            onclick="window.open(`https://www.maangchi.com/recipe/patbingsu`);"
            data-author="M"
            data-categories="desserts"
+           data-cuisine="korean"
+
       >
 
         <img class="RecipeImg" src="./images/Patbingsu.jpg" alt="bowl of shaved ice topped with sweet red beans and fruit" />
@@ -314,6 +340,8 @@
            onclick="window.open(`https://www.patreon.com/posts/pasta-with-sauce-45042575`);"
            data-author="CLM"
            data-categories="pasta"
+           data-cuisine="American"
+
       >
 
         <img class="RecipeImg" src="./images/Cauliflower_Spaghetti.jpg" alt="bowl of spaghettie with cauliflower sauce" />
@@ -339,6 +367,8 @@
            onclick="window.open(`https://www.maangchi.com/recipe/yangnyeom-tongdak`);"
            data-author="M"
            data-categories="meat"
+           data-cuisine="korean"
+
       >
 
         <img class="RecipeImg" src="./images/Korean_Fried_Chicken.jpg" alt="plate of fried chicken with pickles and kimchi" />
@@ -366,6 +396,8 @@
            onclick="window.open(`https://www.seriouseats.com/ultimate-beef-stroganof-recipe`);"
            data-author="KLA"
            data-categories="pasta"
+           data-cuisine="italian"
+
       >
 
         <img class="RecipeImg" src="./images/Stroganoff.jpg" alt="bowl of beef stroganoff pasta" />
@@ -393,6 +425,7 @@
            onclick="window.open(`https://www.patreon.com/posts/recipe-vanilla-60100711`);"
            data-author="CLM"
            data-categories="desserts"
+           data-cuisine="american"
       >
 
         <img class="RecipeImg" src="./images/Pear_Tart.jpg" alt="pear tart on a table" />
@@ -420,6 +453,7 @@
            onclick="window.open(`https://www.abc.net.au/everyday/vegetarian-carbonara-with-mushrooms-and-miso/12426392`);"
            data-author="HM"
            data-categories="pasta"
+           data-cuisine="italian"
       >
 
         <img class="RecipeImg" src="./images/Mushroom_Carbonara.jpg" alt="pan filled with mushroom carbonara pasta" />
