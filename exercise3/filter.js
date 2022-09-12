@@ -1,3 +1,4 @@
+/* This is the filter function for the food categories */
 function filterCategory(filterSelection, filterBy, filterButton){
     let recipeCards = Array.from(document.getElementsByClassName ("RecipeCardWrapper"));
     //console.log(recipeCards);

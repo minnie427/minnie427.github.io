@@ -51,8 +51,9 @@
       <details class="FilterCategoryWrapper">
         <summary>Cuisine</summary>
         <button class="FilterSelector" id="italian-cuisine" onclick='filterCategory("italian", "cuisine")'>Italian</button>
-        <button class="FilterSelector" id="japanese-cuisine" onclick='filterCategory("japanese", "cuisine")'>Japanese</button>
-        <button class="FilterSelector" id="korean-cuisine" onclick='filterCategory("korean", "cuisine")'>Korean</button>
+<!-- I wanted to have Korean and Japanese as separate cuisine but I couldn't exactly tell where some recipes are from, so I decided to put as one, "Asian." -->
+        <!--         <button class="FilterSelector" id="japanese-cuisine" onclick='filterCategory("japanese", "cuisine")'>Japanese</button>
+ -->        <button class="FilterSelector" id="asian-cuisine" onclick='filterCategory("asian", "cuisine")'><!-- KOREAN -->Asian</button>
         <button class="FilterSelector" id="african-cuisine" onclick='filterCategory("african", "cuisine")'>African</button>
         <button class="FilterSelector" id="american-cuisine" onclick='filterCategory("american", "cuisine")'>American</button>
         <button class="FilterSelector" id="categories" onclick='allCategories()'>All</button>
@@ -123,7 +124,7 @@
            onclick="window.open(`https://www.seriouseats.com/crispy-enoki-and-onion-fritter-with-thai-curry-mayo-recipe`);"
            data-author="KLA"
            data-categories="veggies"
-           data-cuisine="japanese"
+           data-cuisine="asian"
       >
 
         <img class="RecipeImg" src="./images/Enoki.jpg" alt="enoki mushrooms" />
@@ -151,7 +152,7 @@
            onclick="window.open(`https://www.maangchi.com/recipe/jjinppang`);"
            data-author="M"
            data-categories="desserts"
-           data-cuisine="korean"
+           data-cuisine="asian"
       >
 
         <img class="RecipeImg" src="./images/Red_Bean_Bun.jpg" alt="ripped open steamed bun with red bean paste" />
@@ -204,7 +205,7 @@
            onclick="window.open(`https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe`);"
            data-author="KLA"
            data-categories="veggies"
-           data-cuisine="korean"
+           data-cuisine="asian"
       >
 
         <img class="RecipeImg" src="./images/Grilled_Cheese.jpg" alt="grilled cheese sandwich with pickles" />
@@ -261,7 +262,7 @@
            onclick="window.open(`https://www.maangchi.com/recipe/kimchijeon`);"
            data-author="M"
            data-categories="veggies"
-           data-cuisine="korean"
+           data-cuisine="asian"
 
       >
 
@@ -315,7 +316,7 @@
            onclick="window.open(`https://www.maangchi.com/recipe/patbingsu`);"
            data-author="M"
            data-categories="desserts"
-           data-cuisine="korean"
+           data-cuisine="asian"
 
       >
 
@@ -369,7 +370,7 @@
            onclick="window.open(`https://www.maangchi.com/recipe/yangnyeom-tongdak`);"
            data-author="M"
            data-categories="meat"
-           data-cuisine="korean"
+           data-cuisine="asian"
 
       >
 
