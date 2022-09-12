@@ -7,11 +7,13 @@
 /* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
 /* https://lospec.com/palette-list/1bit-monitor-glow */
 
+/* I've changed colours with my favourite colour palette with pink and green */
+/* Andd added font */
 :root{
-  --col-01:#2f2f2f;
+  --col-01:#363636;
   --col-02:#d8d8d8;
   --col-03:#ed36a1;
-  --col-04:#b6e878;
+  --col-04:#4bdf7f;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -75,6 +77,8 @@ summary {
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+/* I've added padding bottom to give enough space for the recipe title and the other text at the bottom of images */
 .RecipeCardWrapper{
   height: 30rem;
   padding: 1rem;

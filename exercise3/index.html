@@ -35,6 +35,7 @@
       </details>
     </div>
 
+<!-- In thought it would be easier to find food if I classify them by food categories -->
     <div id="list-filter-wrapper"> 
     <details class="FilterCategoryWrapper">
       <summary>Categories</summary>
@@ -45,15 +46,15 @@
       <button class="FilterSelector" id="categories" onclick='allCategories()'>All</button>
       </details>
     </div>
-
+<!-- Since I've noticed a few recipe which the origin is guessed so easily, like Kimchi from Korea, I decided to sort out as cuisines -->
     <div id="list-filter-wrapper"> 
       <details class="FilterCategoryWrapper">
-        <summary>Cusine</summary>
-        <button class="FilterSelector" id="italian-categories" onclick='filterCategory("italian", "categories")'>Italian</button>
-        <button class="FilterSelector" id="japanese-categories" onclick='filterCategory("japanese", "categories")'>Japanese</button>
-        <button class="FilterSelector" id="korean-categories" onclick='filterCategory("korean", "categories")'>Korean</button>
-        <button class="FilterSelector" id="african-categories" onclick='filterCategory("african", "categories")'>African</button>
-        <button class="FilterSelector" id="american-categories" onclick='filterCategory("american", "categories")'>American</button>
+        <summary>Cuisine</summary>
+        <button class="FilterSelector" id="italian-cuisine" onclick='filterCategory("italian", "cuisine")'>Italian</button>
+        <button class="FilterSelector" id="japanese-cuisine" onclick='filterCategory("japanese", "cuisine")'>Japanese</button>
+        <button class="FilterSelector" id="korean-cuisine" onclick='filterCategory("korean", "cuisine")'>Korean</button>
+        <button class="FilterSelector" id="african-cuisine" onclick='filterCategory("african", "cuisine")'>African</button>
+        <button class="FilterSelector" id="american-cuisine" onclick='filterCategory("american", "cuisine")'>American</button>
         <button class="FilterSelector" id="categories" onclick='allCategories()'>All</button>
         </details>
       </div>
@@ -66,6 +67,7 @@
            onclick="window.open(`https://www.abc.net.au/everyday/baked-puttanesca-risotto-with-tomato-olives-lemon-parsley-recipe/11270338`);"
            data-author="HM"
            data-categories="pasta"
+           data-cuisine="italian"
       >
 
         <img class="RecipeImg" src="./images/Puttanesca.jpg" alt="bowl of puttanesca pasta" />
@@ -121,7 +123,7 @@
            onclick="window.open(`https://www.seriouseats.com/crispy-enoki-and-onion-fritter-with-thai-curry-mayo-recipe`);"
            data-author="KLA"
            data-categories="veggies"
-           data-cuisine="italian"
+           data-cuisine="japanese"
       >
 
         <img class="RecipeImg" src="./images/Enoki.jpg" alt="enoki mushrooms" />
