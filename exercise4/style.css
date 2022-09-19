@@ -10,6 +10,9 @@
 
 video {
   border: 1px solid black;
+   justify-content: center;
+  align-items: center;
+  display:flex;
 }
 
 p {
@@ -28,6 +31,9 @@ p {
 
 #media {
   width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display:flex;
 }
 
 .video-controls {
@@ -36,7 +42,7 @@ p {
   width: 400px;
   border-radius: 10px;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   margin-left: -200px;
   background-color: black;
