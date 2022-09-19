@@ -27,13 +27,15 @@ p {
   flex-direction:column;
   justify-content: center;
   align-items: center;
+
 }
 
 #media {
   width: 100vw;
+  display:flex;
   justify-content: center;
   align-items: center;
-  display:flex;
+  
 }
 
 .video-controls {
@@ -67,8 +69,9 @@ p {
   
 }
 
+/* changed the colour to match the colours of the video source */
 button, .controls {
-  background: linear-gradient(to bottom,#222,#666);
+  background: linear-gradient(to bottom,rgb(232, 106, 209),rgb(58, 58, 58));
 }
 
 .player:hover .controls, player:focus .controls {
@@ -80,8 +83,12 @@ button:before {
   font-size: 20px;
   position: relative;
   content: attr(data-icon);
-  color: #aaa;
+  color: rgb(186, 186, 186);
   text-shadow: 1px 1px 0px black;
+}
+
+button:after {
+  color:#333;
 }
 
 .play:before {
@@ -107,7 +114,13 @@ button {
   border-radius: 10px 0 0 10px;
 }
 
-.fwd {
+/* I've disabled border -radius for fwd button since it's not located at the end anymore */
+/* .fwd {
+  border-radius: 0 10px 10px 0;
+} */
+
+/* I've added border radius to mute button to match the design */
+.muted{
   border-radius: 0 10px 10px 0;
 }
 
@@ -142,7 +155,8 @@ button:hover,button:focus {
 }
 
 button:active {
-  box-shadow: inset 3px 3px 2px black;
+  box-shadow: inset 5px 3px 2px rgb(35, 35, 35);
+  color:rgb(232, 106, 209);
 }
 
 .active:before {
