@@ -13,7 +13,8 @@
 }
 
 body {
-
+    /* If the background image doesn't work, this will be the second option */
+   /*  background-color: var(--col-04); */
     /* To get rid of the default bouncing effect which you can see when you scroll with nothing to scroll */
     overscroll-behavior: none;
     font-family: 'Poppins', sans-serif;
@@ -113,6 +114,11 @@ h2 {
     top: 62%;
     left: 50%;
 }
+
+
+
+
+
 
 
 
