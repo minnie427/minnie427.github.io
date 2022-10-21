@@ -4,8 +4,9 @@
     padding: 0;
 }
 
+/* I just love the combination of pink and green and I think I will keep using this as my colour pallete for future design as well */
 :root{
-    --col-01: #272727;
+    --col-01: #383838;
     --col-02: #d263ab;
     --col-03: #32c485;
     --col-04: #7b7b7b;
@@ -53,7 +54,7 @@ h1 {
     display: inline-block;
     justify-content: center;
     user-select: none;
-   
+    
 }
 
 /* This is the marquee effect wrapper div */
@@ -112,14 +113,92 @@ h2 {
     position: fixed;
     margin-left: -200px;
     padding: 5px;
-    top: 62%;
+    top: 60%;
     left: 50%;
 }
 
+/* From here, it's for the modal styling */
+
+/* For the button at the bottom of the cupcake */
+#open {
+    padding: 10px 12px;
+    background: var(--col-02);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+  /*   z-index: 500; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ top: 92%;
+  left: 50%;
+  margin-left: -90px;
+
+}
+
+/* For the modal popup styling */
+.modal {
+    width: 400px;
+    background: var(--col-03);
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: white;
+    display:none;
+    z-index:1000;
+    
+}
+
+.modalContainer {
+    display: flex;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+    top:0;
+    left: 0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.modal img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
 
+.modal h3 {
+    font-size: 30px;
+    margin: 30px 0 10px;
+    color:var(--col-01);
+}
 
-
-
+/* This is for the close button of modal */
+.close {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: var(--col-02);
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 300ms ease-in-out;
+}
 

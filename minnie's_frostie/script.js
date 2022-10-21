@@ -1,5 +1,9 @@
 
 
+
+
+
+
 /* Draggable coding */
 window.onload = function(){
 
@@ -29,6 +33,8 @@ window.onload = function(){
     let ease = .05
  */
 
+
+    
 var bottomPage = document.getElementById('bottomPage');
 bottomPage.addEventListener('dragover', handleDragOver, false);
 bottomPage.addEventListener('drop', handleFileSelect, false);
@@ -64,10 +70,16 @@ function randomPosition(el){
 }
 
 
+
+
 }
 
 /* This is the sound effect code for each draggable element.
-I've recorded all the sound and edited and applied them to the button individually. */
+I've recorded all the sound and edited and applied them to the button individually. 
+I was thinking of just adding sound effects of drop or bells but I wanted to make the user experience more fun and creative!
+And when I was showing my work to few people for testing, once I had my own voice recording to each toppings, 
+they all wanted to click everything to see what kind of sound they have! 
+so I think it definitely worked in drawing more intrest and attention to them. Also, I enjoyed recording them so much. I had so much fun doing this hahaha :) */
 
 var cream1 = new Audio();
 cream1.src = "audio/cream1.mp3"
@@ -125,4 +137,51 @@ tomato.src = "audio/tomato.mp3"
 
 var cucumber = new Audio();
 cucumber.src = "audio/cucumber.mp3"
+
+
+/* Sound effects added to modal buttons */
+var done = new Audio();
+done.src = "audio/fairy.mp3"
+
+var gotIt = new Audio();
+gotIt.src = "audio/pop1.mp3"
+
+
+
+/* This is all the failed trials of implementing modal popups */
+
+/* const modal = document.querySelector('#modal');
+const openModal = document.querySelector('.open-button');
+const closeModal = document.querySelector('.close-button');
+
+openModal.addEventListener('click', () => {
+    modal.showModal();
+}) 
+
+closeModal.addEventListener('click', () => {
+    modal.close();
+})  */
+
+/* const open = document.getElementById('open');
+const modalContainer = document.getElementById('modalContainer');
+const close = document.getElementById('close');
+
+open.addEventListener('click', () => {
+    modalContainer.classList.add('show');
+})
+
+close.addEventListener('click', () => {
+    modalContainer.classList.remove('show');
+})
+ */
+
+/* document.getElementById("open").addEventListener("click", function(){
+    document.getElementByClassname("modalContainer")[0].classList.add("active");
+});
+
+document.getElementById("close").addEventListener("click", function(){
+    document.getElementByClassname("modalContainer")[0].classList.remove("active");
+});
+
+ */
 

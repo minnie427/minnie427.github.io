@@ -35,7 +35,7 @@
 
     <body>
 
-  
+       
 
    <!-- This is for the background music which is autoplayed and looped. 
     Since it's a background music, the volume is edited quite low. And the music is called,"fireplace" which suits to the cozy and romantic feelings of the project.
@@ -146,9 +146,39 @@ I've attached the draggable image in the button div and assigned the individual 
         <!-- This is the cupcake bottom that is fixed at the bottom of the page -->
         <div class="cupcake">
         <img src="./images/cupcake.png" width="400px" style="pointer-events:none" ></div>
-    
+        
+
+        <!-- This is for the modal which I used as a final step of my website.
+        Once the users are done decorating the cupcake, they can click the button to read the instructions of screenshot for MacOS and Window to send it to the special person.
+        I wanted to have some kind of a closure of giving the gift for the metaphor. so I decided to add this modal as the final instruction to encourage the users to actually send the screenshot! -->
+            <button id="open" onmousedown="done.play()" >Cupcake is done!</button>
+            <div id="modalContainer" class="modal">
+            <div class="modalContent" id="modal">
+                <img src="./images/giftbox.png">
+                <h3>Send the screenshot!</h3>
+                <p>MacOS: Command + Shift + 4</p>
+                <p>Windows: Ctrl + PrtScn </p>
+                <button class="close" onmousedown="gotIt.play()">GOT IT</button></div>
+            </div>
+        
+        <!-- JS code for the modal -->
+       <script>
+       var modal = document.getElementById("modalContainer");
+       var btn = document.getElementById("open");
+       var span = document.getElementsByClassName("close")[0];
+
+       btn.onclick = function(){
+        modal.style.display = "block";
+       }
+
+       span.onclick = function(){
+        modal.style.display = "none";
+       }
 
     
+
+       </script>
+
     </body>
 
 </html>
