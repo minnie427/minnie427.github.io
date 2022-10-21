@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Minnie's Frostie</title>
+
+    </head>
+
+    <body>
+   <!-- This is for the background music which is autoplayed and looped. 
+    Since it's a background music, the volume is edited quite low. And the music is called,"fireplace" which suits to the cozy and romantic feelings of the project.
+It was downloaded from youtube's library which is copy right free -->
+    <audio id="controls" autoplay="" loop="" src="./audio/fireplace2.mp3"></audio>
+    
+
+    <h1>Minnie's Frostie</h1>
+
+    <!-- This is the marque effect section -->
+    <div class ="text-wrapper">
+        <h2>Make an awesome cupcake for someone special to you!</h2>
+        <h2>Make an awesome cupcake for someone special to you!</h2>
+        <h2>Make an awesome cupcake for someone special to you!</h2>
+        <h2>Make an awesome cupcake for someone special to you!</h2>
+    </div> <br>
+
+<!-- This one was the test for playing the audio with clicks -->
+<!-- <button onmousedown="cream1.play()" class='btn'>sound1</button> -->
+
+<!-- This is the container for all the draggable elements -->
+       <div class="draggable-container">
+
+   <!-- It was challenging to add sound effect to image, so instead, i've made them as buttons to play the sound onclick.
+Styled the button as transparent to hide all the button features only except for the sound effect.
+I've attached the draggable image in the button div and assigned the individual sound effects to each buttons-->
+            <div class="Draggable">
+                <button onmousedown="cream1.play()" class='btn'>
+            <img id="cream1" src="./images/cream1.png"  width="250" height="200" style="pointer-events:none" ></button></div>
+   
+            
+            <div class="Draggable">
+                <button onmousedown="cream3.play()" class='btn'>
+            <img src="./images/cream3.png" width="250" height="200" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="cream2.play()" class='btn'>
+            <img src="./images/cream2.png" width="250" height="200" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="cream4.play()" class='btn'>
+            <img src="./images/cream4.png" width="250" height="200" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="haribo.play()" class='btn'>
+            <img src="./images/haribo.png" width="100" height="130" style="pointer-events:none" ></button></div>
+                
+            <div class="Draggable">
+                <button onmousedown="haribo2.play()" class='btn'>
+            <img src="./images/haribo 2.png" width="100" height="130" style="pointer-events:none" ></button></div>
+    
+            <div class="Draggable">
+                <button onmousedown="cookie1.play()" class='btn'>
+            <img src="./images/cookie1.png" width="130" height="130" style="pointer-events:none" ></button></div>
+        
+            <div class="Draggable">
+                <button onmousedown="cookie2.play()" class='btn'>
+            <img src="./images/cookie2.png" width="130" height="130" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="chocolate1.play()" class='btn'>
+            <img src="./images/chocolate1.png" width="100" height="100" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="chocolate2.play()" class='btn'>
+            <img src="./images/chocolate2.png" width="100" height="100" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="chocolate3.play()" class='btn'>
+            <img src="./images/chocolate3.png" width="100" height="100" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="cherry.play()" class='btn'>
+            <img src="./images/cherry.png" width="100" height="100" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="strawberry.play()" class='btn'>
+            <img src="./images/strawberry.png" width="100" height="100" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="blueberry.play()" class='btn'>
+            <img src="./images/blueberry.png" width="100" height="80" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="raspberry.play()" class='btn'>
+            <img src="./images/raspberry.png" width="100" height="100" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="watermelon.play()" class='btn'>
+            <img src="./images/watermelon.png" width="100" height="100" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="brocoli.play()" class='btn'>
+            <img src="./images/brocoli.png" width="100" height="100" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="tomato.play()" class='btn'>
+            <img src="./images/tomato.png" width="100" height="100" style="pointer-events:none" ></button></div>
+
+            <div class="Draggable">
+                <button onmousedown="cucumber.play()" class='btn'>
+            <img src="./images/cucumber.png" width="100" height="100" style="pointer-events:none" ></button></div>
+
+        </div>
+
+        <!-- This is the cupcake bottom that is fixed at the bottom of the page -->
+        <div class="cupcake">
+        <img src="./images/cupcake.png" width="400px" style="pointer-events:none" ></div>
+    
+
+    
+    </body>
+
+</html>
