@@ -21,7 +21,7 @@ body {
     width: 100vw;
     height: 100vh;
     /* I've combined few images and edited their hue, saturation, and brightness to create the background with the theme of celebrations or party when you exchange the gifts */
-    background-image: url(/images/bgr4.jpg);
+    background-image: url("bgr4.jpg");
     background-size: cover;
     width: 100vw;
     height: 100vh;
