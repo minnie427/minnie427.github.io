@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --col-01: #272727;
+    --col-02: #d263ab;
+    --col-03: #32c485;
+    --col-04: #7b7b7b;
+    --border-01: dashed 2px white;
+}
+
+body {
+    /* background-color: var(--col-03); */
+    /* To get rid of the default bouncing effect which you can see when you scroll with nothing to scroll */
+    overscroll-behavior: none;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/bgr4.JPG);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 3px #272727;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+
+.ListDiv {
+    background-color: pink;
+}
+
+.Draggable {
+   
+    z-index: 9999;
+    align-items: center;
+   /*  float: left;  */
+    margin: 0 auto; 
+    display: inline-block;
+    justify-content: center;
+    user-select: none;
+
+   
+}
+
+
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    background: var(--col-02);
+    overflow: hidden;
+
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: white;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-rtl 15s linear infinite;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.btn {
+    background: transparent;
+    border: none;
+    z-index: 50;
+}
+
+.draggable-container {
+    width: 100vw;
+   /*  align-items: center;
+    justify-content: center;  */
+    text-align: center;
+  
+}
+
+.cupcake {
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    margin-left: -200px;
+    padding: 5px;
+    top: 62%;
+    left: 50%;
+
+}
+
+
+
+  
+
+
+/* if you are using image, you don't need to use this, only when using div */
+/* .Draggable > h3, p{
+    pointer-events: none;
+    user-select: none;
+} */
+
+
+/* 
+.containerNew {
+    width: 100%;
+    height: 100%;
+    background-color: #d263ab;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+
+}
+
+section {
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+
+ */
+
+/* 
+.wrapper {
+    display: auto;
+    flex: none;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.one {
+    background-image: url(/images/brg3.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+} */
+/* 
+.two {
+    background-image: url(/images/pink-texture.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+}
+
+
+.three {
+    background-image: url(/images/blueberry-texture.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.four {
+    background-image: url(/images/sprinkle1.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sticky {
+    background-color: red;
+    height: 40vh;
+    width: 40vw;
+ /*    justify-content: center;
+    align-items: center; */
+/*     position: sticky;
+    top: 0;
+    left: 10vw;
+    z-index: 100; 
+}
+ */
+
+/* from here */
+/* 
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    width: 100vw;
+    background-color:#272727;
+    margin: 0 auto;
+} */
+
+/* 
+#bottomPage {
+    width: 100vw;
+    height: 30vh;
+    grid-row: 4/10;
+    grid-column: 1/3;
+    background-color:#b332c4;
+    position: absolute;
+    top: 70%;
+    z-index: 20;
+}
+
+.slide {
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+    grid-column:1/2;
+    grid-row:1/6;
+    z-index: 0;
+}
+
+.wrapper {
+    display: flex;
+    width: 300vw;
+    transform: rotate(90deg) translateY(-60vh);
+    transform-origin: top left;
+    background-color:#d263ab;
+    grid-column:1/2;
+    grid-row:1/6;
+    z-index: 0;
+}
+
+
+.container {
+    height: 100vw;
+    width: 60vh;
+    transform: rotate(-90deg) translateX(-60vh);
+    transform-origin: top left;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:aqua;
+    grid-column:1/2;
+    grid-row:1/6;
+    z-index: 0;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 100vw;
+    background-position: bottom;
+    background-size: cover;
+    grid-column:1/2;
+    z-index: 0;
+}
+
+.l1 {
+    background-image: url(/images/haribo.png);
+    background-size: cover;
+    background-position: center;
+    background-size: 100%;
+    z-index: 0;
+}
+
+.l2 {
+    background-image: url(/images/haribo2.png);
+    z-index: 0;
+}
+
+.l3 {
+    background-image: url(/images/strawberry.png);
+    text-align: center;
+    padding-top: 10%;
+    z-index: 0;
+}
+
+.l4 {
+    background-image: url(/images/3.png);
+    background-size: cover;
+    z-index: 0;
+}
+
+.l0 {
+   position: absolute;
+   bottom: 0px;
+   z-index: 0;
+}
+
+.stickyPart {
+    position: sticky;
+    top: 50vh;
+    left:0;
+    width: 20vw;
+    height: 30vh;
+    z-index: 5;
+}
+
+.stickyPart img {
+    position: sticky;
+    width: 20vw;
+    height: 30vh;
+   align-items: center;
+   z-index: 5;
+   
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+ */
