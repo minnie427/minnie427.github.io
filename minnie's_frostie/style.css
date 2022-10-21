@@ -94,6 +94,7 @@ h2 {
     background: transparent;
     border: none;
     z-index: 50;
+    cursor: grab;
 }
 
 
