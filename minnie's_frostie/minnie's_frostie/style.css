@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* I just love the combination of pink and green and I think I will keep using this as my colour pallete for future design as well */
+:root{
+    --col-01: #383838;
+    --col-02: #d263ab;
+    --col-03: #32c485;
+    --col-04: #7b7b7b;
+    --border-01: dashed 2px white;
+}
+
+body {
+    /* If the background image doesn't work, this will be the second option */
+   /*  background-color: var(--col-04); */
+    /* To get rid of the default bouncing effect which you can see when you scroll with nothing to scroll */
+    overscroll-behavior: none;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    /* I've combined few images and edited their hue, saturation, and brightness to create the background with the theme of celebrations or party when you exchange the gifts */
+    background-image: url("bgr4.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* This is the title words with shadow applied */
+h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 3px #272727;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+
+.ListDiv {
+    background-color: pink;
+}
+
+
+.Draggable {
+   
+    z-index: 9999;
+    align-items: center;
+   /*  float: left;  */
+    margin: 0 auto; 
+    /* To poisition them in the center */
+    display: inline-block;
+    justify-content: center;
+    user-select: none;
+    
+}
+
+/* This is the marquee effect wrapper div */
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    background: var(--col-02);
+    overflow: hidden;
+
+}
+
+/* Marque effect text settings */
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: white;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-rtl 15s linear infinite;
+}
+
+/* Marque effect animation settings */
+@keyframes move-rtl {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* This is the btn that was applied on all draggable images */
+.btn {
+    background: transparent;
+    border: none;
+    z-index: 50;
+    cursor: grab;
+}
+
+
+.draggable-container {
+    width: 100vw;
+   /*  align-items: center;
+    justify-content: center;  */
+    text-align: center;
+}
+
+/* To fix the cupcake at the bottom of the page */
+.cupcake {
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    margin-left: -200px;
+    padding: 5px;
+    top: 60%;
+    left: 50%;
+}
+
+/* From here, it's for the modal styling */
+
+/* For the button at the bottom of the cupcake */
+#open {
+    padding: 10px 12px;
+    background: var(--col-02);
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+  /*   z-index: 500; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ top: 92%;
+  left: 50%;
+  margin-left: -90px;
+
+}
+
+/* For the modal popup styling */
+.modal {
+    width: 400px;
+    background: var(--col-03);
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: white;
+    display:none;
+    z-index:1000;
+    
+}
+
+.modalContainer {
+    display: flex;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vw;
+    background: transparent;
+    top:0;
+    left: 0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.modal img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.modal h3 {
+    font-size: 30px;
+    margin: 30px 0 10px;
+    color:var(--col-01);
+}
+
+/* This is for the close button of modal */
+.close {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: var(--col-02);
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 300ms ease-in-out;
+}
+
