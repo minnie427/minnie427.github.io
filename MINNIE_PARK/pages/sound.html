@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <script type="module" src="../three.js" defer></script>
+
+    
+
+        <title>MINNIE PARK</title>
+
+   <!-- Favicon -->
+   <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+   <link rel="manifest" href="../favicon/site.webmanifest">
+
+
+        <style>
+            body {
+                background-color: rgb(222, 169, 207);
+                
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <header>
+            <div id="header-section">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html"><img src="../img/_house.png" width="50" height="40" ></a></li>
+                    </ul>
+                </nav>
+                <img src="../img/_musicnote.png" id="musicPlay" width="48" height="42">
+                <audio id="bgm" src="../audio/galaxy.mp3" ></audio>
+                <script>
+                    var bgm = document.getElementById("bgm");
+                    bgm.volume = 0.3;
+                    var musicPlay = document.getElementById("musicPlay");
+                    musicPlay.onclick = function(){
+                        if(bgm.paused){
+                            bgm.play();
+                            musicPlay.src="../img/_musicnote.png";
+                        } else {
+                            bgm.pause();
+                            musicPlay.src="../img/_pause.png";
+                        }
+                    }
+                </script>
+            </div>
+        </header>
+
+    <h1 id="top"><img src="../img/_sound.png" id="name" width = 650px ></h1>
+        <br><br><br>
+    <div class ="text-wrapper">
+        <h2>WANNA PLAY THE GAME PREVIEW BELOW?</h2>
+        <h2>WANNA PLAY THE GAME PREVIEW BELOW?</h2>
+        <h2>WANNA PLAY THE GAME PREVIEW BELOW?</h2>
+        <h2>WANNA PLAY THE GAME PREVIEW BELOW?</h2>
+    </div> <br>
+
+        <div id="embed">
+            <video width="80%" height="80%" controls>
+                <source src="../video/sound.mp4" type=video/mp4>
+              </video>    
+        </div>
+
+        <ul><li><a href="https://minniepark.itch.io/cookie-survival?secret=1T1UorcAiZu2yHlsF9v5oKRHLXM" target="_blank"><h4>DOWNLOAD LINK</h4></a></li></ul>
+
+    <br><br><br><br><br><br><br>
+
+<div class="contentBox" >
+    <h3>WHAT IS IT?</h3>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam voluptates soluta quis tempore deserunt blanditiis sapiente dolore dolorem fugit. Nisi obcaecati temporibus magni. Facere voluptatibus ex tempora ullam voluptatum.</P>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam voluptates soluta quis tempore deserunt blanditiis sapiente dolore dolorem fugit. Nisi obcaecati temporibus magni. Facere voluptatibus ex tempora ullam voluptatum.</P>
+</div>
+<div class="contentBox" >
+    <h3>WHAT HAVE I LEARNED?</h3>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam voluptates soluta quis tempore deserunt blanditiis sapiente dolore dolorem fugit. Nisi obcaecati temporibus magni. Facere voluptatibus ex tempora ullam voluptatum.</P>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam voluptates soluta quis tempore deserunt blanditiis sapiente dolore dolorem fugit. Nisi obcaecati temporibus magni. Facere voluptatibus ex tempora ullam voluptatum.</P>
+</div>
+<div class="contentBox" >
+    <h3>REFLECTION</h3>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam voluptates soluta quis tempore deserunt blanditiis sapiente dolore dolorem fugit. Nisi obcaecati temporibus magni. Facere voluptatibus ex tempora ullam voluptatum.</P>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam voluptates soluta quis tempore deserunt blanditiis sapiente dolore dolorem fugit. Nisi obcaecati temporibus magni. Facere voluptatibus ex tempora ullam voluptatum.</P>
+</div><br>
+
+<div class="bottomPage">
+    <ul><li><a href="#top"><img src="../img/_arrow.png" width="40" height="40" ></a></li></ul>
+    <ul><li><a href="../index.html"><img src="../img/_house.png" width="50" height="40" ></a></li></ul>
+    <ul><li><a href="contact.html"><img src="../img/_contact2.png" width="45" height="43" ></a></li></ul>
+</div><br>
+
+</body>
+
+</html>
+
