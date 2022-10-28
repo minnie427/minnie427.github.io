@@ -38,7 +38,7 @@ const models = [
     scale: 0.0008,
   },
   {
-    gltf: "./data/_cookie.glb",
+    gltf: "./data/cookie.glb",
     link: "./pages/cookie.html",
     position: [1.7, 0.8, -2.1],
     scale: 0.01,

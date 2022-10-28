@@ -16,7 +16,7 @@
         <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-        <link rel="manifest" href="../favicon/site.webmanifest">
+        <link rel="manifest" href="./favicon/site.webmanifest">
 
         <style>
             body {
@@ -32,11 +32,11 @@
             <div id="header-section">
                 <nav>
                     <ul>
-                        <li><a href="./index.html"><img src="./img/_house.png" width="55" height="45" ></a></li>
+                        <li><a href="./index.html"><img src="./img/house.png" width="55" height="45" ></a></li>
                     </ul>
                 </nav>
-                <img src="./img/_musicnote.png" id="musicPlay" width="48" height="42">
-                <audio id="bgm" src="../audio/fireplace.mp3" ></audio>
+                <img src="./img/musicnote.png" id="musicPlay" width="48" height="42">
+                <audio id="bgm" src="./audio/fireplace.mp3" ></audio>
                 <script>
                     var bgm = document.getElementById("bgm");
                     bgm.volume = 0.1;
@@ -44,15 +44,15 @@
                     musicPlay.onclick = function(){
                         if(bgm.paused){
                             bgm.play();
-                            musicPlay.src="./img/_musicnote.png";
+                            musicPlay.src="./img/musicnote.png";
                         } else {
                             bgm.pause();
-                            musicPlay.src="./img/_pause.png";
+                            musicPlay.src="./img/pause.png";
                         }
                     }
                 </script>
             </div>
-            <h1> <img src="./img/_cupcake.png" id="name" width = 650px height = 100% >  </h1>
+            <h1> <img src="./img/cupcake.png" id="name" width = 650px height = 100% >  </h1>
         </header>
        
 <br><br><br><br><br>
@@ -69,10 +69,11 @@
                 </div><br><br><br><br><br><br><br><br><br><br><br>
 
                 <div class="bottomPage">
-                    <ul><li><a href="#top"><img src="./img/_arrow.png" width="40" height="40" ></a></li></ul>
-                    <ul><li><a href="../index.html"><img src="./img/_house.png" width="50" height="40" ></a></li></ul>
-                    <ul><li><a href="contact.html"><img src="./img/_contact2.png" width="45" height="43" ></a></li></ul>
+                    <ul><li><a href="#top"><img src="./img/arrow.png" width="40" height="40" ></a></li></ul>
+                    <ul><li><a href="./index.html"><img src="./img/house.png" width="50" height="40" ></a></li></ul>
+                    <ul><li><a href="contact.html"><img src="./img/contact2.png" width="45" height="43" ></a></li></ul>
                 </div><br>
+
 
 </body>
 
