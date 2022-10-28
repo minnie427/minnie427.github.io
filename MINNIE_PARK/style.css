@@ -175,6 +175,13 @@ p2 {
   text-shadow: none;
 }
 
+p3 {
+  color: var(--col-01);
+  font-size: 1rem;
+  font-weight: 600;
+  text-shadow: none;
+}
+
 .bottomPage {
   max-width: 100%;
   height: 50px;
@@ -272,14 +279,14 @@ h6 {
   width: .15em;
   margin: 0 auto;
   border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 150%;
+  font-size: 100%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);  
   /* color:rgb(234, 30, 156); */
   color: var(--col-02);
-  text-shadow: 1px 1px 3px #070707;
+  text-shadow: 1px 1px 2px #070707;
 
 }
 
@@ -289,14 +296,14 @@ h6 {
   width: .15em;
   margin: 0 auto;
   border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 150%;
+  font-size: 100%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);  
  /*  color:rgb(20, 187, 56); */
   color: var(--col-03);
-  text-shadow: 1px 1px 3px #070707;
+  text-shadow: 1px 1px 2px #070707;
 
 }
 
@@ -306,13 +313,13 @@ h6 {
   width: .15em;
   margin: 0 auto;
   border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 150%;
+  font-size: 100%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);  
   color:rgb(29, 170, 189);
-  text-shadow: 1px 1px 3px #070707;
+  text-shadow: 1px 1px 2px #070707;
 
 }
 
@@ -322,13 +329,13 @@ h6 {
   width: .15em;
   margin: 0 auto;
   border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 150%;
+  font-size: 100%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);  
   color:rgb(149, 67, 187);
-  text-shadow: 1px 1px 3px #070707;
+  text-shadow: 1px 1px 2px #070707;
 
 }
 
@@ -339,13 +346,13 @@ h6 {
   width: .15em;
   margin: 0 auto;
   border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 150%;
+  font-size: 100%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);  
   color: var(--col-01);
-  text-shadow: 1px 1px 3px #070707;
+  text-shadow: 1px 1px 2px #070707;
 
 }
 
