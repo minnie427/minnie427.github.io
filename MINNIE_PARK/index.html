@@ -13,10 +13,10 @@
         <title>MINNIE PARK</title>
 
      <!-- Favicon -->
-     <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-     <link rel="manifest" href="../favicon/site.webmanifest">
+     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+     <link rel="manifest" href="./favicon/site.webmanifest">
 
 
 
@@ -27,11 +27,11 @@
             <div id="header-section">
              <!--    <nav>
                     <ul>
-                        <li><a href="index.html"><img src="../img/house.png" width="55" height="45" ></a></li>
+                        <li><a href="index.html"><img src="./img/house.png" width="55" height="45" ></a></li>
                     </ul>
                 </nav> -->
-                <img src="../img/musicnote.png" id="musicPlay" width="48" height="42">
-                <audio id="bgm" src="../audio/main.mp3" ></audio>
+                <img src="./img/_musicnote.png" id="musicPlay" width="48" height="42">
+                <audio id="bgm" src="./audio/main.mp3" ></audio>
                 <script>
                     var bgm = document.getElementById("bgm");
                     bgm.volume = 0.1;
@@ -39,10 +39,10 @@
                     musicPlay.onclick = function(){
                         if(bgm.paused){
                             bgm.play();
-                            musicPlay.src="../img/musicnote.png";
+                            musicPlay.src="./img/_musicnote.png";
                         } else {
                             bgm.pause();
-                            musicPlay.src="../img/pause.png";
+                            musicPlay.src="./img/_pause.png";
                         }
                     }
                 </script>
