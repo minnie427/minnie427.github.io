@@ -6,17 +6,17 @@
 
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../style.css">
-        <script type="module" src="./three.js" defer></script>
+        <script type="module" src="../three.js" defer></script>
 
     
 
         <title>MINNIE PARK</title>
 
          <!-- Favicon -->
-         <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-         <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-         <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-         <link rel="manifest" href="./favicon/site.webmanifest">
+         <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+         <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+         <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+         <link rel="manifest" href="../favicon/site.webmanifest">
          
         <style>
             body {
@@ -33,10 +33,10 @@
             <div id="header-section">
                 <nav>
                     <ul>
-                        <li><a href="/index.html"><img src="/img/house.png" width="50" height="40" ></a></li>
+                        <li><a href="./index.html"><img src="./img/house.png" width="50" height="40" ></a></li>
                     </ul>
                 </nav>
-                <img src="/img/musicnote.png" id="musicPlay" width="48" height="42">
+                <img src="./img/musicnote.png" id="musicPlay" width="48" height="42">
                 <audio id="bgm" src="/audio/birds.mp3" ></audio>
                 <script>
                     var bgm = document.getElementById("bgm");
@@ -45,10 +45,10 @@
                     musicPlay.onclick = function(){
                         if(bgm.paused){
                             bgm.play();
-                            musicPlay.src="/img/musicnote.png";
+                            musicPlay.src="./img/musicnote.png";
                         } else {
                             bgm.pause();
-                            musicPlay.src="/img/pause.png";
+                            musicPlay.src="./img/pause.png";
                         }
                     }
                 </script>
@@ -88,9 +88,9 @@
 </div><br>
 
 <div class="bottomPage">
-    <ul><li><a href="#top"><img src="/img/arrow.png" width="40" height="40" ></a></li></ul>
-    <ul><li><a href="/index.html"><img src="/img/house.png" width="50" height="40" ></a></li></ul>
-    <ul><li><a href="contact.html"><img src="/img/contact2.png" width="45" height="43" ></a></li></ul>
+    <ul><li><a href="#top"><img src="./img/arrow.png" width="40" height="40" ></a></li></ul>
+    <ul><li><a href="./index.html"><img src="./img/house.png" width="50" height="40" ></a></li></ul>
+    <ul><li><a href="contact.html"><img src="./img/contact2.png" width="45" height="43" ></a></li></ul>
 </div><br>
 
 
