@@ -41,13 +41,23 @@ body {
     z-index: 1;
     position: absolute;
    /*  font-weight: 500; */
-    top: 0%;
+    padding-top: 50%;
     left: 0%;
     right: 0%;
   
     text-align: center;
+    
 }
 
+.image-container {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
 
 #embed {
   margin-top: 2vh;
@@ -380,3 +390,4 @@ to{border-right-color: transparent;}
  /*  margin:auto; */
   color: var(--col-01);
 }
+
