@@ -21,57 +21,57 @@ const models = [
   {
     gltf: "./data/robin.glb",
     link: "./pages/pinkbird.html",
-    position: [-1.6, 0.3, 0],
+    position: [-2.1, 0.3, 0],
     scale: 0.0021,
     rotate: 0.75,
   },
-  {
+ /*  {
     gltf: "./data/rose1.glb",
     link: "./pages/spring.html",
     position: [0, -0.5, 0],
     scale: 25,
-  },
+  }, */
   {
-    gltf: "./data/flashlight.glb",
+    gltf: "./data/rose1.glb",
     link: "./pages/flashlight.html",
-    position: [0, -0.3, -2.3],
-    scale: 0.0008,
+    position: [0, -0.4, -2.3],
+    scale: 25,
   },
   {
     gltf: "./data/cookie.glb",
     link: "./pages/cookie.html",
-    position: [1.7, 0.8, -2.1],
+    position: [2, 1, -2.1],
     scale: 0.01,
   },
   {
     gltf: "./data/cube.glb",
     link: "./pages/sound.html",
-    position: [-1.7, 0, -2],
+    position: [-2, 0.4, -2],
     scale: 0.008,
   },
   {
     gltf: "./data/galaxy3.glb" ,
     link: "./pages/galaxy.html",
-    position: [1.7, 0.3, 0],
+    position: [2.1, 0.3, 0],
     scale: 0.5,
   },
   {
     gltf: "./data/cupcake4.glb",
     link: "./pages/cupcake.html",
-    position: [0, 0, 2],
+    position: [0, -0.4, 2],
     scale: 2.1,
   },
   {
     gltf: "./data/abstract.glb",
     link: "./pages/about.html",
-    position: [1.5, -0.5, 2],
+    position: [2, -0.7, 2],
     scale: 0.15,
   },
   {
     gltf: "./data/macbook3.glb",
     link: "./pages/contact.html",
-    position: [-1.5, 0, 2.2],
-    scale: 0.29,
+    position: [-1.8, -0.3, 2.2],
+    scale: 0.26,
   }
 
 ]
